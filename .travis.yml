@@ -2,6 +2,8 @@ language: objective-c
 osx_image: xcode7.3
 
 before_install:
+  - brew update
+  - brew install gflags
   - make deps
 
 install:
