@@ -1,0 +1,11 @@
+language: objective-c
+osx_image: xcode7.3
+
+before_install:
+  - make deps
+
+install:
+  - make
+
+script:
+  - ls -@hlR build/Squirrel.app/
