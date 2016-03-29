@@ -5,7 +5,7 @@ before_install:
   - brew update
   - brew install snappy gflags
   - brew reinstall boost
-  - sed -i '193,202d' librime/thirdparty/src/leveldb/build_detect_platform
+  - sed -i '' -e '193,202d' librime/thirdparty/src/leveldb/build_detect_platform
   - make deps
 
 install:
