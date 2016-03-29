@@ -2,6 +2,7 @@ language: objective-c
 osx_image: xcode7.3
 
 before_install:
+  - false; true
   - brew update
   - brew install snappy gflags
   - brew reinstall boost
