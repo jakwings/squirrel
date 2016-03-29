@@ -3,9 +3,9 @@ osx_image: xcode7.3
 
 before_install:
   - brew update
-  - CXXFLAGS=-stdlib=libc++ LDFLAGS=-stdlib=libc++ brew install --verbose --build-from-source snappy
-  - brew install gflags
+  - brew install snappy gflags
   - brew reinstall boost
+  - sed '193,202d' librime/thirdparty/src/leveldb/build_detect_platform
   - make deps
 
 install:
